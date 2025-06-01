@@ -1,0 +1,177 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly specify line endings for as many files as possible.
+# People who (for example) rsync between Windows and Linux need this.
+
+# File types which we know are binary
+
+# Treat SVG files as binary so that their contents don't change due to line
+# endings. The contents of SVGs must not change from the way they're stored
+# on assets.scratch.mit.edu so that MD5 calculations don't change.
+*.svg binary
+
+# Prefer LF for most file types
+*.css text eol=lf
+*.frag text eol=lf
+*.htm text eol=lf
+*.html text eol=lf
+*.iml text eol=lf
+*.js text eol=lf
+*.js.map text eol=lf
+*.json text eol=lf
+*.json5 text eol=lf
+*.jsx text eol=lf
+*.md text eol=lf
+*.vert text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+
+# Prefer LF for these files
+.editorconfig text eol=lf
+.eslintrc text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+.gitmodules text eol=lf
+LICENSE text eol=lf
+Makefile text eol=lf
+README text eol=lf
+TRADEMARK text eol=lf
+
+# Use CRLF for Windows-specific file types
+src/lib/libraries/decks/steps/add-variable.pt_BR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/animate-char-pick-sprite.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/chase-game-add-backdrop.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/chase-game-add-sprite1.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/chase-game-add-sprite2.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/cn-show-character.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/code-cartoon-04-use-minus-sign.es.png filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/code-cartoon-04-use-minus-sign.tr.png filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/fly-choose-backdrop.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/fly-choose-scenery.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/glide-around-point.es.png filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.am.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.en.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.es.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.fr.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.ja.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.pt_BR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.sw.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.tr.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.uk.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.zh_CN.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.zh_TW.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/imagine-record-a-sound.zu.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-1-move.es.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-1-move.zu.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-2-say.fr.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-2-say.zh_TW.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-3-green-flag.es.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-3-green-flag.fr.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-3-green-flag.ja.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-3-green-flag.pt_BR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-3-green-flag.sw.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-3-green-flag.tr.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-3-green-flag.zh_CN.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/intro-3-green-flag.zh_TW.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/music-pick-instrument.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/name-pick-letter2.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/pong-add-a-paddle.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/pong-add-line.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/pong-add-line.RTL.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-add-sprite.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.am.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.ar.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.en.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.fr.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.ja.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.pt_BR.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.sw.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.tr.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.uk.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.zh_CN.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.zh_TW.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/speech-spin.zu.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/story-flip.en.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/story-flip.pt_BR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/story-pick-backdrop.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/story-pick-backdrop2.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/story-pick-sprite.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/story-pick-sprite2.LTR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.am.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.en.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.es.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.fr.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.ja.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.pt_BR.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.sw.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.tr.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.zh_CN.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.zh_TW.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/steps/talking-11-choose-sound.zu.gif filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/add-backdrop.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/add-effects.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/add-sprite.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/animate-a-character.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/animate-a-name.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/animate-sprite.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/cartoon-network.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/change-size.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/chase-game.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/code-a-cartoon.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/getting-started-asl.png diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/getting-started.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/glide-around.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/imagine.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/make-music.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/move-arrow-keys.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/record-a-sound.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/spin.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/tell-a-story.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/text-to-speech.jpg diff=lfs merge=lfs -text
+src/lib/libraries/decks/thumbnails/video-sensing.jpg diff=lfs merge=lfs -text
+src/lib/libraries/extensions/penguinmod/extensions/3d_physics_icon_layered.pdn filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/extensions/penguinmod/extensions/lua.png filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/extensions/penguinmod/extensions/mcutils.png filter=lfs diff=lfs merge=lfs -text
+src/lib/libraries/extensions/penguinmod/extensions/text[[:space:]]extension.png filter=lfs diff=lfs merge=lfs -text
+src/lib/tw-scratch-render-fonts/Archivo-Black.ttf filter=lfs diff=lfs merge=lfs -text
+src/lib/tw-scratch-render-fonts/Archivo-Regular.ttf filter=lfs diff=lfs merge=lfs -text
+src/lib/tw-scratch-render-fonts/BadComic-Regular.ttf filter=lfs diff=lfs merge=lfs -text
+src/lib/tw-scratch-render-fonts/Griffy-Regular.ttf filter=lfs diff=lfs merge=lfs -text
+src/lib/tw-scratch-render-fonts/Monospace.ttf filter=lfs diff=lfs merge=lfs -text
+src/lib/tw-scratch-render-fonts/MonospaceBold.ttf filter=lfs diff=lfs merge=lfs -text
+src/lib/tw-scratch-render-fonts/NotoSans-Medium.ttf filter=lfs diff=lfs merge=lfs -text
+src/lib/tw-scratch-render-fonts/SourceSerifPro-Regular.otf filter=lfs diff=lfs merge=lfs -text
+scratch-for-school.ico filter=lfs diff=lfs merge=lfs -text
+favicon.ico filter=lfs diff=lfs merge=lfs -text
+static/images/favicon[[:space:]](2).png filter=lfs diff=lfs merge=lfs -text
+static/images/512.png filter=lfs diff=lfs merge=lfs -text
+favicon[[:space:]](1).ico filter=lfs diff=lfs merge=lfs -text
+static/favicon.ico filter=lfs diff=lfs merge=lfs -text
+local-scratch-vm/src/extensions/jg_3dVr/headset.pdn filter=lfs diff=lfs merge=lfs -text
+local-scratch-vm/test/fixtures/complex.sb2 filter=lfs diff=lfs merge=lfs -text
+local-scratch-vm/test/fixtures/event.sb2 filter=lfs diff=lfs merge=lfs -text
+local-scratch-vm/test/fixtures/execute/sprite-number-name.sb2 filter=lfs diff=lfs merge=lfs -text
+local-scratch-vm/test/fixtures/load-extensions/confirm-load/pen-dolphin-3d.sb2 filter=lfs diff=lfs merge=lfs -text
+local-scratch-vm/test/fixtures/load-extensions/confirm-load/pen-dolphin-3d.sb3 filter=lfs diff=lfs merge=lfs -text
+local-scratch-vm/test/fixtures/looks.sb2 filter=lfs diff=lfs merge=lfs -text
+local-scratch-vm/test/fixtures/ordering.sb2 filter=lfs diff=lfs merge=lfs -text
+local-scratch-vm/test/fixtures/pen.sb2 filter=lfs diff=lfs merge=lfs -text
+ml2scratch/audio/overview.wav filter=lfs diff=lfs merge=lfs -text
+ml2scratch/images/1or2.gif filter=lfs diff=lfs merge=lfs -text
+ml2scratch/images/en/ml2scratch.gif filter=lfs diff=lfs merge=lfs -text
+ml2scratch/images/en/recognition.png diff=lfs merge=lfs -text
+ml2scratch/images/en/rock.png diff=lfs merge=lfs -text
+ml2scratch/images/en/scratch_program.png diff=lfs merge=lfs -text
+ml2scratch/images/ja/ml2scratch.gif filter=lfs diff=lfs merge=lfs -text
+ml2scratch/images/ml2scratch.png diff=lfs merge=lfs -text
+ml2scratch/images/old/en/original/7.png diff=lfs merge=lfs -text
+ml2scratch/images/old/en/original/8.png diff=lfs merge=lfs -text
+ml2scratch/images/old/en/original/scratchx_main.png diff=lfs merge=lfs -text
+ml2scratch/images/old/en/original/scratchx_top.png diff=lfs merge=lfs -text
+ml2scratch/images/old/en/windows.png diff=lfs merge=lfs -text
+ml2scratch/images/old/ja/original/7.png diff=lfs merge=lfs -text
+ml2scratch/images/old/ja/original/8.png filter=lfs diff=lfs merge=lfs -text
+ml2scratch/images/old/ja/windows.png filter=lfs diff=lfs merge=lfs -text
+ml2scratch/images/old/zh-cn/windows.png filter=lfs diff=lfs merge=lfs -text
+ml2scratch/images/zh-cn/windows.png filter=lfs diff=lfs merge=lfs -text
